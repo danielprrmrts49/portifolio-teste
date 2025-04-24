@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #111;
+}
+
+#minha-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid gold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: gold;
+}
+
+a {
+    color: gold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+#pergunta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#btn-nao, #btn-sim {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
