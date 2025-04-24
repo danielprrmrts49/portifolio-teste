@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <header>
+       <img src="foto2.jpg" alt="">
+        <h1>Bem-vindo ao meu Portfólio</h1>
+        <p>Olá! Meu nome é daniel e sou um desenvolvedor.</p>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou apaixonado por minha ex e programação, com experiência em HTML, CSS, JavaScript e muito mais. Acredito no poder da criação e no impacto da inovação.</p>
+    </section>
+
+    <section id="pergunta">
+        <h2>Você me acha legal?</h2>
+        <button id="btn-nao">Não</button>
+        <button id="btn-sim">Sim</button>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <ul>
+            <li>Email: tem não</li>
+            <li>Instagram: <a href="https://www.instagram.com/seuusuario" target="_blank">meu Instagram</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; tmj é nos</p>
+    </footer>
+
+    <script>
+        const btnSim = document.getElementById("btn-sim");
+        const btnNao = document.getElementById("btn-nao");
+
+        btnSim.addEventListener("mouseover", () => {
+            const larguraTela = window.innerWidth;
+            const alturaTela = window.innerHeight;
+
+            const novaPosX = Math.random() * (larguraTela - 100);
+            const novaPosY = Math.random() * (alturaTela - 100);
+
+            btnSim.style.position = "absolute";
+            btnSim.style.left = novaPosX + "px";
+            btnSim.style.top = novaPosY + "px";
+        });
+
+        btnNao.addEventListener("click", () => {
+            alert("Ah, que pena kkk");
+        });
+    </script>
+</body>
+</html>
